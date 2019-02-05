@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Averia+Gruesa+Libre');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300');
 
+/* INDEX CSS */
 .home-wallpaper::before {
     content: "";
     position: absolute;
@@ -15,9 +16,6 @@
     background-size: cover;
     filter: contrast(70%);
 }
-
-/* .white-overlay::before {
-} */
 
 .title-navbar {
     font-family: 'Roboto Condensed', sans-serif;
@@ -86,4 +84,32 @@ div ul li a {
 
 .navbar-transparent {
     background-color: transparent !important;
+}
+
+/* BRIDE AND GROOM CSS */
+
+.bride-and-groom-wallpaper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/bride-and-groom.jpg");
+    background-position: center;
+    background-size: cover;
+    filter: contrast(70%);
+}
+
+.b-a-g-text {
+    position: relative;
+    color: white;
+    font-size: 40pt;
+    text-align: center;
+    /* margin-top: 170px; */
+    display: block;
+    width: 80%;
+    margin: auto;
+    padding-top: 30%;
+    line-height: 1.25;
 }
