@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:300');
+@import url('https://fonts.googleapis.com/css?family=Averia+Gruesa+Libre');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300');
 
 .home-wallpaper::before {
     content: "";
@@ -9,6 +12,7 @@
     height: 100%;
     background-image: url("../img/Wallpaper Home.jpg");
     background-position: center;
+    background-size: cover;
     filter: contrast(70%);
 }
 
@@ -16,7 +20,7 @@
 } */
 
 .title-navbar {
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Roboto Condensed', sans-serif;
     color: white;
 }
 
@@ -26,7 +30,54 @@
     color: white;
     font-size: 40pt;
     text-align: center;
-    margin-top: 170px;
+    /* margin-top: 170px; */
+    display: block;
+    width: 80%;
+    margin: auto;
+    padding-top: 30%;
+    line-height: 1.25;
+}
+
+.setting-text {
+    position: relative;
+    font-family: 'Comfortaa', cursive;
+    color: white;
+    font-size: 15pt;
+    text-align: center;
+    /* margin-top: 170px; */
+    display: block;
+    width: 80%;
+    padding-top: 40px;
+    margin: auto;
+    line-height: 1.5;
+}
+
+.sidebar-text {
+    font-family: 'Comfortaa', cursive;
+}
+
+div ul li.sidebar-white {
+    background-color: #fff;
+}
+
+div ul li a {
+    text-align: left !important;
+}
+
+.ios .theme-dark .list ul, 
+.list.ios .theme-dark ul {
+    background-color: transparent;
+}
+
+.sidebar-white:before, 
+.sidebar-white:after
+.list-button:after, 
+.list-button:before {
+    display: none !important;
+}
+
+.list-button.active-state {
+    background-color: #d9d9d9 !important;
 }
 
 .white-icon {
