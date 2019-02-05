@@ -4,7 +4,7 @@ var app = new Framework7({
     // App Name
     name: 'My App',
     // App id
-    id: 'com.example.cleanblankf7',
+    id: 'com.wedding.project',
     // Enable swipe panel
     panel: {
       swipe: 'left',
@@ -14,13 +14,17 @@ var app = new Framework7({
       {
         path: '/about/',
         url: 'about.html',
-      },
-      {
-        path: '/services/',
-        url: 'services.html'
       }
     ],
     // ... other parameters
   });
   
   var mainView = app.views.create('.view-main');
+  
+  // App Events
+  app.on('panelClose', function (panel) {
+    console.log('Panel ' + panel.side + ': close');
+  });
+  app.on('panelClosed', function (panel) {
+    console.log('Panel ' + panel.side + ': closed');
+  });

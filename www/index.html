@@ -8,46 +8,67 @@
     <!-- Color theme for statusbar -->
     <meta name="theme-color" content="#2196f3">
     <!-- Your app title -->
-    <title>My App</title>
+    <title>Black & White Wedding</title>
     <!-- Path to Framework7 Library CSS -->
     <link rel="stylesheet" href="lib/framework7/css/framework7.min.css">
     <!-- Path to your custom app styles-->
-    <link rel="stylesheet" href="css/my-app.css">
+    <link type="text/css" rel="stylesheet" href="css/my-app.css">
+    <!-- Link for Material IO icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
-    <body>
+    <body class="color-theme-black theme-dark">
     <!-- App root element -->
     <div id="app">
         <!-- Statusbar overlay -->
         <div class="statusbar"></div>
 
+        
+        <div class="panel panel-left panel-reveal">
+            <div class="block">
+                <p>Left Panel content here</p>
+                <p>
+                    <a class="panel-close" href="#">Close me</a>
+                </p>
+                <p>
+                    <a class="panel-open" href="#" data-panel="right">Open Right Panel</a>
+                </p>
+            </div>
+        </div>
+
         <!-- Your main view, should have "view-main" class -->
         <div class="view view-main">
         <!-- Initial Page, "data-name" contains page name -->
-        <div data-name="home" class="page">
+            <div data-name="home" class="page theme-dark">
 
-            <!-- Top Navbar -->
-            <div class="navbar">
-            <div class="navbar-inner">
-                <div class="title">Awesome App</div>
-            </div>
-            </div>
+                <!-- Top Navbar -->
+                <div class="navbar">
+                    <div class="navbar-inner sliding">
+                        <div class="right">
+                            <a class="link icon-only panel-open" href="#">
+                                <i class="material-icons white-icon">menu</i>
+                            </a>
+                        </div>
+                        <div class="title title-navbar">Home</div>
+                    </div>
+                </div>
 
-            <!-- Toolbar -->
-            <div class="toolbar">
-            <div class="toolbar-inner">
-                <!-- Toolbar links -->
-                <a href="#" class="link">Link 1</a>
-                <a href="#" class="link">Link 2</a>
-            </div>
-            </div>
+                <!-- Toolbar -->
+                <!-- <div class="toolbar">
+                    <div class="toolbar-inner">
+                        <a href="#" class="link">Link 1</a>
+                        <a href="#" class="link">Link 2</a>
+                    </div>
+                </div> -->
 
-            <!-- Scrollable page content -->
-            <div class="page-content">
-            <p>Page content goes here</p>
-            <!-- Link to another page -->
-            <a href="/about/">About app</a>
+                <!-- Scrollable page content -->
+                <div class="page-content home-wallpaper">
+                    <div>
+                        <p class="title-text">Ben and Anna</p>
+                    </div>
+                <!-- Link to another page -->
+                <!-- <a href="/about/">About app</a> -->
+                </div>
             </div>
-        </div>
         </div>
     </div>
     <!-- Path to Framework7 Library JS-->
