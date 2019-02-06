@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300');
 
 /* UNIVERSAL CLASSES */
+
 .img-container {
     display: block;
     padding: 0px 20px;
@@ -14,9 +15,22 @@
     width: 100%;
 }
 
+ul li {
+    color: black !important;
+}
+
 /* OVERRIDING CSS */
 
-.md .theme-dark .page, .page.md .theme-dark {
+.md .theme-dark .page, 
+.page.md .theme-dark,
+.ios .theme-dark .page,
+.page.ios .theme-dark {
+    background: #fff;
+}
+
+.md .color-theme-black .timeline-item-date, 
+.md .color-theme-black .timeline-month-title, 
+.md .color-theme-black .timeline-year-title {
     background: #fff;
 }
 
@@ -115,4 +129,28 @@ div ul li a {
     padding-top: 40px;
     margin: auto;
     line-height: 1.5;
+}
+
+/* WEDDING PARTY CSS */
+
+.wp-text {
+    font-family: 'Comfortaa', cursive;
+    color: black;
+    font-size: 12pt;
+    text-align: center;
+    display: block;
+    width: 80%;
+    padding-top: 10px;
+    margin: auto;
+    line-height: 1.5;
+}
+
+/* EVENTS CSS */
+
+.timeline-item-date,
+.timeline-item-date small,
+.timeline-item-content,
+.timeline-item-content div,
+.timeline-item-content .timeline-item-inner {
+    color: black !important;
 }
