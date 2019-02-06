@@ -7,8 +7,8 @@
 
 .img-container {
     display: block;
-    padding: 0px 20px;
-    margin: 20px 0px;
+    padding: 0px 20px !important;
+    margin: 20px 0px !important;
 }
 
 .img-container img {
@@ -32,6 +32,10 @@ ul li {
 .md .color-theme-black .timeline-month-title, 
 .md .color-theme-black .timeline-year-title {
     background: #fff;
+}
+
+.ios .theme-dark .timeline-item-inner {
+    background-color: #fff !important;
 }
 
 /* INDEX CSS */
@@ -153,4 +157,36 @@ div ul li a {
 .timeline-item-content div,
 .timeline-item-content .timeline-item-inner {
     color: black !important;
+}
+
+/* ATTIRE CSS */
+
+.att-text {
+    font-family: 'Comfortaa', cursive;
+    color: black;
+    font-size: 12pt;
+    text-align: center;
+    display: block;
+    width: 80%;
+    padding-top: 40px;
+    margin: auto;
+    line-height: 1.5;
+}
+
+/* LOCATION CSS */
+
+.loc-text {
+    font-family: 'Comfortaa', cursive;
+    color: black;
+    font-size: 12pt;
+    text-align: center;
+    display: block;
+    width: 80%;
+    padding-top: 40px;
+    margin: auto;
+    line-height: 1.5;
+}
+
+.google-maps-resize {
+    width: 100%;
 }
