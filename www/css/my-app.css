@@ -159,6 +159,10 @@ div ul li a {
     color: black !important;
 }
 
+.timeline-item-date {
+    width: 70px !important;
+}
+
 /* ATTIRE CSS */
 
 .att-text {
