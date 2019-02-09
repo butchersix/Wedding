@@ -38,6 +38,15 @@ ul li {
     background-color: #fff !important;
 }
 
+.md .color-theme-black .toolbar:not(.messagebar), 
+.md .color-theme-black.toolbar:not(.messagebar) {
+    background-color: white !important;
+}
+
+.toolbar:after {
+    display: none !important;
+}
+
 /* INDEX CSS */
 .home-wallpaper::before {
     content: "";
@@ -117,6 +126,10 @@ div ul li a {
     color: white;
 }
 
+.gray-icon {
+    color: #888888;
+}
+
 .navbar-transparent {
     background-color: transparent !important;
 }
@@ -144,9 +157,28 @@ div ul li a {
     text-align: center;
     display: block;
     width: 80%;
-    padding-top: 10px;
     margin: auto;
     line-height: 1.5;
+}
+
+.swiper-slide {
+    color: black;
+}
+
+.tab-link {
+    font-size: 12px !important;
+}
+
+.tab-page-container {
+    margin: 20px 20px;
+}
+
+.swiper-container {
+    height: 100%;
+}
+
+.slide-title {
+    display: none;
 }
 
 /* EVENTS CSS */
