@@ -59,6 +59,12 @@ app.on('panelClosed', function (panel) {
 
 var swiper = app.swiper.get('.swiper-container');
 
+$('#app').on('touchstart', '.swiper-container', function(){
+    swiper = app.swiper.get('.swiper-container');
+    swiper.allowSlideNext = false;
+    swiper.allowSlidePrev = false;
+});
+
 $('#app').on('click', 'a[id$=tab]', function() {
     /**
         this event listener can handle dynamically created selectors
@@ -66,6 +72,8 @@ $('#app').on('click', 'a[id$=tab]', function() {
 
     // always get current instance of swiper for local access when the event triggers
     swiper = app.swiper.get('.swiper-container');
+    swiper.allowSlideNext = true;
+    swiper.allowSlidePrev = true;
 
     if(this.id.startsWith("back")) {
         swiper.slidePrev();
@@ -88,7 +96,7 @@ $('#app').on('click', 'a[id$=tab]', function() {
 function getTitle(swiperObject) {
     slide_title = "";
     $('.slide-title').each(function(e) {
-        if(e == swiper.activeIndex) {
+        if(e == swiperObject.activeIndex) {
             slide_title = $(this).html();
         }
     });

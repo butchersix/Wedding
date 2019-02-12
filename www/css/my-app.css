@@ -130,7 +130,7 @@ div ul li a {
 }
 
 .gray-icon {
-    color: #888888;
+    color: #535353;
 }
 
 .navbar-transparent {
@@ -166,6 +166,11 @@ div ul li a {
 
 .swiper-slide {
     color: black;
+}
+
+.swiper-slide .block .list ul {
+    /* height: 80%;
+    overflow-y: scroll; */
 }
 
 .tab-link {
