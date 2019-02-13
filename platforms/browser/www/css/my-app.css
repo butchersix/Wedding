@@ -235,3 +235,16 @@ div ul li a {
 .google-maps-resize {
     width: 100%;
 }
+
+/* FOOD MENU CSS */
+
+.fm-text {
+    font-family: 'Comfortaa', cursive;
+    color: black;
+    font-size: 12pt;
+    text-align: center;
+    display: block;
+    width: 80%;
+    margin: auto;
+    line-height: 1.5;
+}
