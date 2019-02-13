@@ -186,7 +186,9 @@ div ul li a {
     /* height: 100%; */
 }
 
-.slide-title {
+.attire-slide-title,
+.location-slide-title,
+.wedding-slide-title {
     display: none;
 }
 

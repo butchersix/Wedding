@@ -59,19 +59,31 @@ app.on('panelClosed', function (panel) {
 
 var swiper = app.swiper.get('.swiper-container');
 
-$('#app').on('touchstart', '.swiper-container', function(){
-    swiper = app.swiper.get('.swiper-container');
+$('#app').on('touchstart', '.attire-swiper-container', function(){
+    swiper = app.swiper.get('.attire-swiper-container');
     swiper.allowSlideNext = false;
     swiper.allowSlidePrev = false;
 });
 
-$('#app').on('click', 'a[id$=tab]', function() {
+$('#app').on('touchstart', '.location-swiper-container', function(){
+    swiper = app.swiper.get('.location-swiper-container');
+    swiper.allowSlideNext = false;
+    swiper.allowSlidePrev = false;
+});
+
+$('#app').on('touchstart', '.wedding-swiper-container', function(){
+    swiper = app.swiper.get('.wedding-swiper-container');
+    swiper.allowSlideNext = false;
+    swiper.allowSlidePrev = false;
+});
+
+$('#app').on('click', '.attire a[id$=tab]', function() {
     /**
         this event listener can handle dynamically created selectors
     **/
 
     // always get current instance of swiper for local access when the event triggers
-    swiper = app.swiper.get('.swiper-container');
+    swiper = app.swiper.get('.attire-swiper-container');
     swiper.allowSlideNext = true;
     swiper.allowSlidePrev = true;
 
@@ -83,7 +95,7 @@ $('#app').on('click', 'a[id$=tab]', function() {
     }
 
     // next titles
-    nextTitle = getTitle(swiper);
+    nextTitle = getTitle(swiper, '.attire-slide-title');
 
     // if(!(swiper.activeIndex == 0 || swiper.activeIndex == swiper.slides.length - 1)) {
     // }
@@ -93,9 +105,65 @@ $('#app').on('click', 'a[id$=tab]', function() {
     });
 });
 
-function getTitle(swiperObject) {
+$('#app').on('click', '.location a[id$=tab]', function() {
+    /**
+        this event listener can handle dynamically created selectors
+    **/
+
+    // always get current instance of swiper for local access when the event triggers
+    swiper = app.swiper.get('.location-swiper-container');
+    swiper.allowSlideNext = true;
+    swiper.allowSlidePrev = true;
+
+    if(this.id.startsWith("back")) {
+        swiper.slidePrev();
+    }
+    else if(this.id.startsWith("forward")) {
+        swiper.slideNext();
+    }
+
+    // next titles
+    nextTitle = getTitle(swiper, '.location-slide-title');
+
+    // if(!(swiper.activeIndex == 0 || swiper.activeIndex == swiper.slides.length - 1)) {
+    // }
+    var fadetime = 300;
+    $('.current-slide-title').fadeOut(fadetime, function() {
+        $(this).html(nextTitle).fadeIn(fadetime);
+    });
+});
+
+$('#app').on('click', '.wedding a[id$=tab]', function() {
+    /**
+        this event listener can handle dynamically created selectors
+    **/
+
+    // always get current instance of swiper for local access when the event triggers
+    swiper = app.swiper.get('.wedding-swiper-container');
+    swiper.allowSlideNext = true;
+    swiper.allowSlidePrev = true;
+
+    if(this.id.startsWith("back")) {
+        swiper.slidePrev();
+    }
+    else if(this.id.startsWith("forward")) {
+        swiper.slideNext();
+    }
+
+    // next titles
+    nextTitle = getTitle(swiper, '.wedding-slide-title');
+
+    // if(!(swiper.activeIndex == 0 || swiper.activeIndex == swiper.slides.length - 1)) {
+    // }
+    var fadetime = 300;
+    $('.current-slide-title').fadeOut(fadetime, function() {
+        $(this).html(nextTitle).fadeIn(fadetime);
+    });
+});
+
+function getTitle(swiperObject, slideTitleSelector) {
     slide_title = "";
-    $('.slide-title').each(function(e) {
+    $(slideTitleSelector).each(function(e) {
         if(e == swiperObject.activeIndex) {
             slide_title = $(this).html();
         }
