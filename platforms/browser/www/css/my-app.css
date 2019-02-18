@@ -250,3 +250,29 @@ div ul li a {
     margin: auto;
     line-height: 1.5;
 }
+
+/* DEVELOPER CSS */
+.profile-pic {
+    margin: 0 auto;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.profile-pic-img {
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.developer-text {
+    font-family: 'Comfortaa', cursive;
+    color: black;
+    font-size: 12pt;
+    text-align: center;
+    display: block;
+    width: 80%;
+    padding-top: 40px;
+    margin: auto;
+    line-height: 1.5;
+}

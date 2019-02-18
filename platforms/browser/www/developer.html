@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Color theme for statusbar -->
+    <meta name="theme-color" content="#2196f3">
+    <!-- Your app title -->
+    <title>Black & White Wedding</title>
+    <!-- Path to Framework7 Library CSS -->
+    <link rel="stylesheet" href="lib/framework7/css/framework7.min.css">
+    <!-- Path to your custom app styles-->
+    <link type="text/css" rel="stylesheet" href="css/my-app.css">
+    <!-- Link for Material IO icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Icon for the page -->
+    <link rel="icon" href="img/favicon.ico">
+    </head>
+    <body class="color-theme-black theme-dark">
+    <!-- App root element -->
+    <div id="app">
+        <!-- Statusbar overlay -->
+        <div class="statusbar"></div>
+
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+        <!-- Initial Page, "data-name" contains page name -->
+            <div data-name="home" class="page theme-dark">
+
+                <!-- Top Navbar -->
+                <div class="navbar">
+                    <div class="navbar-inner sliding">
+                        <div class="right">
+                            <a class="link icon-only panel-open" href="#">
+                                <i class="material-icons white-icon">menu</i>
+                            </a>
+                        </div>
+                        <div class="title title-navbar">DEVELOPER</div>
+                    </div>
+                </div>
+
+                <!-- Toolbar -->
+                <!-- <div class="toolbar">
+                    <div class="toolbar-inner">
+                        <a href="#" class="link">Link 1</a>
+                        <a href="#" class="link">Link 2</a>
+                    </div>
+                </div> -->
+
+                <!-- Scrollable page content -->
+                <div class="page-content">
+                    <div class="profile-pic">
+                        <img src="img/profile-pic-real.png" class="profile-pic-img">
+                    </div>
+                    <p class="developer-text">
+                        JASPER BRIONES
+                    </p>
+                    <p class="developer-text">
+                        <a href="#">facebook.com/jasperhaven.briones</a>
+                    </p>
+                    <p class="developer-text">
+                        <a href="#">twitter.com/jasper_briones</a>
+                    </p>
+                <!-- Link to another page -->
+                <!-- <a href="/about/">About app</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Path to Framework7 Library JS-->
+    <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="js/my-app.js"></script>
+    </body>
+</html>

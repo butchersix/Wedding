@@ -13,31 +13,35 @@ var app = new Framework7({
     routes: [
         {
             path: '/home/',
-            url: 'index.html',
+            url: 'index.html'
         },
         {
             path: '/bride-and-groom/',
-            url: 'bride-and-groom.html',
+            url: 'bride-and-groom.html'
         },
         {
             path: '/wedding-party/',
-            url: 'wedding-party.html',
+            url: 'wedding-party.html'
         },
         {
             path: '/events/',
-            url: 'events.html',
+            url: 'events.html'
         },
         {
             path: '/attire/',
-            url: 'attire.html',
+            url: 'attire.html'
         },
         {
             path: '/location/',
-            url: 'location.html',
+            url: 'location.html'
         },
         {
             path: '/food-menu/',
-            url: 'food-menu.html',
+            url: 'food-menu.html'
+        },
+        {
+            path: '/developer/',
+            url: 'developer.html'
         }
     ],
     // ... other parameters
